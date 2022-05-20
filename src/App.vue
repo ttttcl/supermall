@@ -1,20 +1,20 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <keep-alive><router-view></router-view></keep-alive>
     <MainTabBar></MainTabBar>
   </div>
 </template>
 
 <script>
-import MainTabBar from 'components/content/mainTabbar/MainTabBar.vue'
+import MainTabBar from "components/content/mainTabbar/MainTabBar.vue";
 export default {
   name: "app",
-  components:{
-    MainTabBar
-  }
+  components: {
+    MainTabBar,
+  },
 };
 </script>
 
 <style>
-@import 'assets/css/base.css'
+@import "assets/css/base.css";
 </style>
